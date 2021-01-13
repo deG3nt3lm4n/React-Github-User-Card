@@ -1,0 +1,117 @@
+*{
+  margin: 0;
+  padding:0;
+  box-sizing: border-box;
+}
+.App {
+  background-color: #282c34;
+  min-height: 100vh;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+.App h1{
+  text-align: center;
+  padding: 20px 0;
+}
+
+.profileCard{
+  width: 500px;
+  margin: 0 auto;
+  background-color: #0f1521;
+  border-radius: 10px;
+}
+
+.profileHeader{
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+  border-bottom: 2px dotted aliceblue;
+}
+
+.profileContent{
+  width: 100%;
+  padding: 10px;
+  display: flex;
+}
+
+.profileImage{
+  width: 25%;
+  height: 125px;
+}
+.profileImage img{
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+
+.profileContentData{
+  padding: 10px;
+  width:75%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.follows{
+  margin: 4px 0;
+  display: flex;
+  align-items: center;
+}
+.follows p {
+  margin-left: 5px;
+}
+.logos{
+  font-size: 24px;
+}
+.logos:hover{
+  color: crimson;
+}
+
+.formSearch{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.formSearch input,
+.formSearch button{
+  padding: 5px;
+  border: none;
+  outline: none;
+}
+.formSearch input{
+  width: 75%;
+}
+.formSearch button{
+  width: 25%;
+  background-color: darkgreen;
+  color: #fff;
+}
+.formSearch button:hover{
+  background-color: lightgreen;
+  color: rgb(49, 48, 48);
+}
+
+.followers{
+  position: relative;
+}
+
+.followersTabs{
+  display: none;
+  position: absolute;
+  bottom: -100px;
+  padding: 10px;
+  background-color: black;
+  color: #fff;
+  height: 100px;
+  overflow: auto;
+}
+
+.toggler{
+  display: block;
+}
+
+.followersTabs ul{
+  list-style-type: none;
+}
